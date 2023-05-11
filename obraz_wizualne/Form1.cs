@@ -64,7 +64,7 @@ namespace obraz_wizualne
                 for (int y = 0; y < image.Height; y++)
                 {
                     Color pixelColor = image.GetPixel(x, y);
-                    int akt_R= pixelColor.R;
+                    int akt_R = pixelColor.R;
                     int akt_G = pixelColor.G;
                     int akt_B = pixelColor.B;
                     akt_R = 255 - akt_R;
@@ -72,7 +72,9 @@ namespace obraz_wizualne
                     akt_B = 255 - akt_B;
                     Color color = Color.FromArgb(akt_R, akt_G, akt_B);
                     image.SetPixel(x, y, color);
-
+                }
+            }
+            pictureBox1.Image = image;
         }
 
         private void obrot_90_Click(object sender, EventArgs e)
@@ -114,9 +116,7 @@ namespace obraz_wizualne
 
         }
     }
-                }
-            }
-            pictureBox1.Image = image;
-        }
-    }
+                
 }
+           
+        

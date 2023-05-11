@@ -132,7 +132,6 @@
         private Button green;
         private Button negatyw;
         public Button Wczytaj;
-        private Button Wczytaj;
         private Button obrot_90;
         private Button pion;
         private Button poziom;
