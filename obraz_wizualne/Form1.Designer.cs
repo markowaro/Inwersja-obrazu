@@ -32,6 +32,9 @@
             Wczytaj = new Button();
             green = new Button();
             negatyw = new Button();
+            obrot_90 = new Button();
+            pion = new Button();
+            poziom = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -40,6 +43,7 @@
             pictureBox1.Location = new Point(12, 12);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(555, 288);
+            pictureBox1.Size = new Size(530, 312);
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click;
@@ -74,6 +78,36 @@
             negatyw.UseVisualStyleBackColor = true;
             negatyw.Click += negatyw_Click;
             // 
+            // obrot_90
+            // 
+            obrot_90.Location = new Point(582, 246);
+            obrot_90.Name = "obrot_90";
+            obrot_90.Size = new Size(173, 51);
+            obrot_90.TabIndex = 2;
+            obrot_90.Text = "Obrót 90st.";
+            obrot_90.UseVisualStyleBackColor = true;
+            obrot_90.Click += obrot_90_Click;
+            // 
+            // pion
+            // 
+            pion.Location = new Point(582, 303);
+            pion.Name = "pion";
+            pion.Size = new Size(173, 52);
+            pion.TabIndex = 3;
+            pion.Text = "Odbicie w pionie";
+            pion.UseVisualStyleBackColor = true;
+            pion.Click += pion_Click;
+            // 
+            // poziom
+            // 
+            poziom.Location = new Point(582, 361);
+            poziom.Name = "poziom";
+            poziom.Size = new Size(173, 52);
+            poziom.TabIndex = 4;
+            poziom.Text = "Odbicie w poziomie";
+            poziom.UseVisualStyleBackColor = true;
+            poziom.Click += poziom_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -81,6 +115,9 @@
             ClientSize = new Size(800, 450);
             Controls.Add(negatyw);
             Controls.Add(green);
+            Controls.Add(poziom);
+            Controls.Add(pion);
+            Controls.Add(obrot_90);
             Controls.Add(Wczytaj);
             Controls.Add(pictureBox1);
             Name = "Form1";
@@ -95,5 +132,9 @@
         private Button green;
         private Button negatyw;
         public Button Wczytaj;
+        private Button Wczytaj;
+        private Button obrot_90;
+        private Button pion;
+        private Button poziom;
     }
 }
