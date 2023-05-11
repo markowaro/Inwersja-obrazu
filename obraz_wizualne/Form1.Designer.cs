@@ -30,6 +30,8 @@
         {
             pictureBox1 = new PictureBox();
             Wczytaj = new Button();
+            green = new Button();
+            negatyw = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -37,7 +39,7 @@
             // 
             pictureBox1.Location = new Point(12, 12);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(393, 285);
+            pictureBox1.Size = new Size(555, 288);
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click;
@@ -52,11 +54,33 @@
             Wczytaj.UseVisualStyleBackColor = true;
             Wczytaj.Click += Wczytaj_Click;
             // 
+            // green
+            // 
+            green.Location = new Point(600, 44);
+            green.Name = "green";
+            green.Size = new Size(121, 47);
+            green.TabIndex = 2;
+            green.Text = "Zielony";
+            green.UseVisualStyleBackColor = true;
+            green.Click += green_Click;
+            // 
+            // negatyw
+            // 
+            negatyw.Location = new Point(600, 97);
+            negatyw.Name = "negatyw";
+            negatyw.Size = new Size(121, 49);
+            negatyw.TabIndex = 3;
+            negatyw.Text = "Negatyw";
+            negatyw.UseVisualStyleBackColor = true;
+            negatyw.Click += negatyw_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(negatyw);
+            Controls.Add(green);
             Controls.Add(Wczytaj);
             Controls.Add(pictureBox1);
             Name = "Form1";
@@ -68,6 +92,8 @@
         #endregion
 
         private PictureBox pictureBox1;
-        private Button Wczytaj;
+        private Button green;
+        private Button negatyw;
+        public Button Wczytaj;
     }
 }
